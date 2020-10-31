@@ -1672,8 +1672,8 @@ img {
   text-align: center;
   color: #333333;
   font-weight: bold;
-  margin-bottom: 50px;
   text-transform: uppercase;
+  padding: 55px;
 }
 
 .packages-title {
@@ -1818,18 +1818,16 @@ img {
 .services {
   background: #0a223d;
   height: 80px;
-}
-
-.services ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .reviews {
@@ -2051,23 +2049,77 @@ img {
           justify-content: space-between;
 }
 
-.package-summery {
-  background: #0a223d;
+.packages_table {
+  text-align: left;
+  border-spacing: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  width: auto;
+  background-color: white;
+  height: 244px;
 }
 
-.services_list {
+.packages_table td,
+tr {
+  border: none;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.table_head {
   background: #0a223d;
-  width: 100%;
-  height: 100px;
-  color: #ffffff;
+  color: white;
+  font-size: 14px;
+}
+
+.pack_details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.package_summary {
+  background: #f5fafe;
+}
+
+.summary_title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 29px;
+  font-family: Mulish;
+}
+
+.packages_table td img {
+  margin-right: 10px;
+}
+
+.services p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Mulish;
+}
+
+.services .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_section {
+  padding: 18px 0 19px;
+  background: #f5fafe;
+}
+
+.header_section a {
+  font-size: 10px;
+  color: #333333;
+  line-height: 13px;
+  font-family: Mulish;
 }
 
 .footer {
